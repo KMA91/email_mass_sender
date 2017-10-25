@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send({hi:"there"})
+  res.send({ bye: 'buddy'})
 });
 
 // Use Heroku env/port(prod) OR 5000(dev)
