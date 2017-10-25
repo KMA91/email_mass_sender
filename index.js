@@ -5,4 +5,5 @@ app.get("/", (req, res) => {
   res.send({hi:"there"})
 });
 
-app.listen(5000);
+// Use Heroku env/port(prod) OR 5000(dev)
+app.listen(process.env.PORT || 5000);
