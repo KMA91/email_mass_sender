@@ -3,6 +3,8 @@ const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
 const keys = require('./config/keys');
+require('./models/user');
+require('./services/passport');
 if(process.env.NODE_ENV === 'production'){
   // CONNECT TO PRODUCTION DB USING MLAB
   mongoose.connect(keys.mongoURI);
@@ -10,8 +12,6 @@ if(process.env.NODE_ENV === 'production'){
   // CONNECT TO DEVELOPMENT DB ON LOCAL MACHINE
   mongoose.connect('mongodb://localhost/emaily');
 }
-require('./models/user');
-require('./services/passport');
 const app = express();
 
 app.use(
