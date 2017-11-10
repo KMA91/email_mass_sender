@@ -10,6 +10,9 @@ import { createStore, applyMiddleware } from 'redux';
 import reduxThunk from 'redux-thunk';
 import App from './components/App';
 import reducers from './reducers';
+import axios from 'axios';
+window.axios = axios;
+
 // reduxThunk gives us direct access to "dispatch function" to manually dispatch an action from an action creater
 
 const store = createStore(reducers, {}, applyMiddleware(reduxThunk));
