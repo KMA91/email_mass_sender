@@ -22,16 +22,16 @@
     "concurrently": "^3.6.1",
     "cookie-session": "^2.0.0-beta.3",
     "express": "^4.16.4",
-    "localtunnel": "^1.9.1",
-    "lodash": "^4.17.11",
-    "mongoose": "^4.13.18",
+    "localtunnel": "^2.0.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^5.12.4",
     "passport": "^0.4.0",
-    "passport-google-oauth20": "^1.0.0",
+    "passport-google-oauth20": "^2.0.0",
     "path-parser": "^2.1.0",
     "sendgrid": "^5.2.3",
     "stripe": "^5.10.0"
   },
   "devDependencies": {
-    "forever": "^0.15.3"
+    "forever": "^3.0.4"
   }
 }
